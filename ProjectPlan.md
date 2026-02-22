@@ -12,7 +12,7 @@
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
 | Choose programming language (Java) | Team | Done | Team discussion |
-| Create GitHub repository | Tai | Done | VanTu09272004/CS2430-Project: CS 2430 Group Project - Spring 2026 |
+| Create GitHub repository | Tai | Done | [VanTu09272004/CS2430-Project: CS 2430 Group Project - Spring 2026](https://github.com/VanTu09272004/CS2430-Project/blob/main/ProjectPlan.md) |
 | Assign roles | Team | Done | Canvas messages |
 | Create project plan file | Musfer | Done | Commit adding ProjectPlan.md |
 
