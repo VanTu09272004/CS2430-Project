@@ -7,7 +7,7 @@
 
 ---
 
-## Milestone 1 – Planning (Finished)
+## Milestone 1 – Planning
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
@@ -18,7 +18,7 @@
 
 ---
 
-## Milestone 2 – Part 1 (Ordinary Sets)
+## Milestone 2 – Part 1 
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
@@ -30,7 +30,7 @@
 
 ---
 
-## Milestone 3 – Part 2 (Multisets)
+## Milestone 3 – Part 2 
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
