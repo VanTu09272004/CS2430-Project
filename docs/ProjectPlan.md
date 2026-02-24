@@ -28,7 +28,7 @@
 | Implement intersection operation | Ti | Done | Commit 819d9a2c937d532c38fd3d31d38cbfa55d5869f0 |
 | Implement difference | Ti | Done | Commit 819d9a2c937d532c38fd3d31d38cbfa55d5869f0 |
 | Implement symmetric difference | Ti | Done | Commit 819d9a2c937d532c38fd3d31d38cbfa55d5869f0 |
-| Create 2-3 test cases + 1 edge case | Deysi | Not Started | — |
+| Create 2-3 test cases + 1 edge case | Deysi | Done | Commit 29693d0992def4ee81db1a854fb59505083c3d83 |
 | Write design notes | Musfer | Done | docs/design-notes.md |
 
 ---
