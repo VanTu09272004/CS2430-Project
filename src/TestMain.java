@@ -3,7 +3,7 @@ public class TestMain {
     static final int n = 10;
     
     public static void main(String[] args) {
-        Main main = new Main(); // use Main class
+        Ordinary main = new Ordinary(); // use Main class
 
         String[] U = {
             "Computer Science","Mathematics","Biology","Physics",
