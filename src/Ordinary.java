@@ -1,4 +1,4 @@
-public class Main {
+public class Ordinary {
     static final int n = 10; // Size of the universal set
     // Complement: A'
     public boolean[] complement(boolean[] A) {
