@@ -37,14 +37,14 @@
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
-| Design multiset using HashMap | Ti | Not Started | — |
-| Implement multiset operations | Ti | Not Started | — |
+| Design multiset using HashMap | Ti | Done | Commit dbecb7321107b2fae1de295c744b3dfde5872497 |
+| Implement multiset operations | Ti | Done | Commit dbecb7321107b2fae1de295c744b3dfde5872497 |
 | Create multiset test cases | Deysi | Not Started | — |
 | Update README and report | Musfer | Not Started | — |
 
 ---
 
 ## Current Status
-- Part 1 is implemented and producing labeled output.
+- Part 2 is implemented and producing labeled output.
 - Verification is defining test cases and edge cases.
-- Next step: Part 2 multisets.
+- Next step: Adding multiset test cases, update README, and reporting.
