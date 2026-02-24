@@ -1,55 +1,5 @@
 public class Main {
     static final int n = 10; // Size of the universal set
-
-    public static void main(String[] args) {
-        String[] U = { // Universal set of 10 subjects
-                "Computer Science",
-                "Mathematics",
-                "Biology",
-                "Physics",
-                "Chemistry",
-                "English",
-                "History",
-                "Economics",
-                "Psychology",
-                "Art"
-        };
-        boolean[] A = new boolean[n];
-        A[2] = true;
-        A[5] = true;
-        A[9] = true;
-        boolean[] B = new boolean[n];
-        B[1] = true;
-        B[3] = true;
-        B[9] = true;
-        Main main = new Main();
-        boolean[] set = new boolean[n];
-        for (int i = 0; i < n; i++) {
-            set[i] = true; // Initialize the universal set (not used directly but can be useful for validation)
-        }
-        boolean[] complementA = main.complement(A);
-        boolean[] complementB = main.complement(B);
-        boolean[] union = main.union(A, B);
-        boolean[] intersection = main.intersection(A, B);
-        boolean[] difference = main.difference(A, B);
-        boolean[] symmetricDifference = main.symmetricDifference(A, B);
-        System.out.println("Universal Set U: " + main.toBitString(set) + " -> " + main.toElementList(set, U));
-        System.out.println("A: " + main.toBitString(A) + " -> " + main.toElementList(A, U));
-        System.out.println(
-                "NOT(A): " + main.toBitString(complementA) + " -> " + main.toElementList(complementA, U));
-        System.out.println("B: " + main.toBitString(B) + " -> " + main.toElementList(B, U));
-        System.out.println(
-                "NOT(B): " + main.toBitString(complementB) + " -> " + main.toElementList(complementB, U));
-        System.out.println(
-                "A union B: " + main.toBitString(union) + " -> " + main.toElementList(union, U));
-        System.out.println("A intersection B: " + main.toBitString(intersection) + " -> "
-                + main.toElementList(intersection, U));
-        System.out.println("A difference B: " + main.toBitString(difference) + " -> "
-                + main.toElementList(difference, U));
-        System.out.println("A symmetric difference B: " + main.toBitString(symmetricDifference) + " -> "
-                + main.toElementList(symmetricDifference, U));
-    }
-
     // Complement: A'
     public boolean[] complement(boolean[] A) {
         boolean[] result = new boolean[n];
@@ -119,5 +69,28 @@ public class Main {
             sb.append("}"); // If no elements, just close the brace
         }
         return sb.toString();
+    }
+
+    public void runAllOperations(boolean[] A, boolean[] B, String[] U) {
+        boolean[] complementA = complement(A);
+        boolean[] complementB = complement(B);
+        boolean[] union = union(A, B);
+        boolean[] intersection = intersection(A, B);
+        boolean[] difference = difference(A, B);
+        boolean[] symmetricDifference = symmetricDifference(A, B);
+        System.out.println("A: " + toBitString(A) + " -> " + toElementList(A, U));
+        System.out.println(
+                "NOT(A): " + toBitString(complementA) + " -> " + toElementList(complementA, U));
+        System.out.println("B: " + toBitString(B) + " -> " + toElementList(B, U));
+        System.out.println(
+                "NOT(B): " + toBitString(complementB) + " -> " + toElementList(complementB, U));
+        System.out.println(
+                "A union B: " + toBitString(union) + " -> " + toElementList(union, U));
+        System.out.println("A intersection B: " + toBitString(intersection) + " -> "
+                + toElementList(intersection, U));
+        System.out.println("A difference B: " + toBitString(difference) + " -> "
+                + toElementList(difference, U));
+        System.out.println("A symmetric difference B: " + toBitString(symmetricDifference) + " -> "
+                + toElementList(symmetricDifference, U));
     }
 }
