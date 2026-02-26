@@ -37,7 +37,7 @@
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
-| Design multiset using HashMap | Ti | Done | Commit dbecb7321107b2fae1de295c744b3dfde5872497 |
+| Design multiset using int[] count array | Ti | Done | Commit dbecb7321107b2fae1de295c744b3dfde5872497 |
 | Implement multiset operations | Ti | Done | Commit dbecb7321107b2fae1de295c744b3dfde5872497 |
 | Create multiset test cases | Deysi | Not Started | — |
 | Update README and report | Musfer | Not Started | — |
