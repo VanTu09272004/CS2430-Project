@@ -1,6 +1,14 @@
 public class Ordinary {
+    /*
+     * This class implements ordinary set operations on boolean arrays.
+     * Each index in the array represents an element in the universal set,
+     * and the value at that index (true/false) indicates whether that element is in
+     * the set.
+     * The universal set is assumed to have a fixed size (n = 10 in this case).
+     */
     static final int n = 10; // Size of the universal set
     // Complement: A'
+
     public boolean[] complement(boolean[] A) {
         boolean[] result = new boolean[n];
         for (int i = 0; i < n; i++) {
@@ -55,11 +63,11 @@ public class Ordinary {
     }
 
     // Helper method to convert boolean array to list of elements
-    public String toElementList(boolean[] set, String[] U) {
+    public String toOrdinaryElementList(boolean[] set, String[] U) {
         StringBuilder sb = new StringBuilder();
         sb.append("{ ");
         for (int i = 0; i < n; i++) {
-            if (set[i]) { // Avoid adding the last element if it's not in the set
+            if (set[i]) { // Append elements separated by comma; remove trailing comma at end
                 sb.append(U[i]).append(", ");
             }
         }
@@ -72,25 +80,28 @@ public class Ordinary {
     }
 
     public void runAllOperations(boolean[] A, boolean[] B, String[] U) {
+        if (U.length != n) {
+            throw new IllegalArgumentException("Universal set size must be " + n);
+        }
         boolean[] complementA = complement(A);
         boolean[] complementB = complement(B);
         boolean[] union = union(A, B);
         boolean[] intersection = intersection(A, B);
         boolean[] difference = difference(A, B);
         boolean[] symmetricDifference = symmetricDifference(A, B);
-        System.out.println("A: " + toBitString(A) + " -> " + toElementList(A, U));
+        System.out.println("A: " + toBitString(A) + " -> " + toOrdinaryElementList(A, U));
         System.out.println(
-                "NOT(A): " + toBitString(complementA) + " -> " + toElementList(complementA, U));
-        System.out.println("B: " + toBitString(B) + " -> " + toElementList(B, U));
+                "NOT(A): " + toBitString(complementA) + " -> " + toOrdinaryElementList(complementA, U));
+        System.out.println("B: " + toBitString(B) + " -> " + toOrdinaryElementList(B, U));
         System.out.println(
-                "NOT(B): " + toBitString(complementB) + " -> " + toElementList(complementB, U));
+                "NOT(B): " + toBitString(complementB) + " -> " + toOrdinaryElementList(complementB, U));
         System.out.println(
-                "A union B: " + toBitString(union) + " -> " + toElementList(union, U));
+                "A union B: " + toBitString(union) + " -> " + toOrdinaryElementList(union, U));
         System.out.println("A intersection B: " + toBitString(intersection) + " -> "
-                + toElementList(intersection, U));
+                + toOrdinaryElementList(intersection, U));
         System.out.println("A difference B: " + toBitString(difference) + " -> "
-                + toElementList(difference, U));
+                + toOrdinaryElementList(difference, U));
         System.out.println("A symmetric difference B: " + toBitString(symmetricDifference) + " -> "
-                + toElementList(symmetricDifference, U));
+                + toOrdinaryElementList(symmetricDifference, U));
     }
 }

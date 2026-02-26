@@ -48,31 +48,51 @@ public class Multiset {
         return result;
     }
 
-    public void runAllOperations(int[] A, int[] B) {
+    public void runAllOperations(int[] A, int[] B, String[] U) {
         int[] union = union(A, B);
         int[] intersection = intersection(A, B);
         int[] difference = difference(A, B);
         int[] sum = sum(A, B);
 
-        System.out.println("A: " + java.util.Arrays.toString(A));
-        System.out.println("B: " + java.util.Arrays.toString(B));
-        System.out.println("Multiple Union (A union B): " + java.util.Arrays.toString(union));
-        System.out.println("Multiple Intersection (A intersection B): " + java.util.Arrays.toString(intersection));
-        System.out.println("Multiple Difference (A difference B): " + java.util.Arrays.toString(difference));
-        System.out.println("Multiple Sum (A sum B): " + java.util.Arrays.toString(sum));
+        System.out.println("A: " + java.util.Arrays.toString(A) + " -> " + toMultisetElementList(A, U));
+        System.out.println("B: " + java.util.Arrays.toString(B) + " -> " + toMultisetElementList(B, U));
+        System.out.println("Multiset Union (A union B): " + java.util.Arrays.toString(union) + " -> "
+                + toMultisetElementList(union, U));
+        System.out.println("Multiset Intersection (A intersection B): " + java.util.Arrays.toString(intersection)
+                + " -> " + toMultisetElementList(intersection, U));
+        System.out.println("Multiset Difference (A difference B): " + java.util.Arrays.toString(difference) + " -> "
+                + toMultisetElementList(difference, U));
+        System.out.println(
+                "Multiset Sum (A sum B): " + java.util.Arrays.toString(sum) + " -> " + toMultisetElementList(sum, U));
     }
 
-     private void validate(int[] A, int[] B) {
+    private void validate(int[] A, int[] B) {
         if (A == null || B == null) {
             throw new IllegalArgumentException("A and B must not be null.");
         }
-        if (A.length != B.length) {
-            throw new IllegalArgumentException("A and B must have the same length (same universal set).");
+        if (A.length != n || B.length != n) {
+            throw new IllegalArgumentException("A and B must both have length " + n + ".");
         }
         for (int i = 0; i < A.length; i++) {
             if (A[i] < 0 || B[i] < 0) {
                 throw new IllegalArgumentException("Multiset counts must be non-negative.");
             }
         }
+    }
+
+    public String toMultisetElementList(int[] multiset, String[] U) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{ ");
+        for (int i = 0; i < n; i++) {
+            if (multiset[i] > 0) { // Append element if count is greater than 0
+                sb.append(U[i]).append(": ").append(multiset[i]).append(", ");
+            }
+        }
+        if (sb.length() > 2) {
+            sb.replace(sb.length() - 2, sb.length(), " }"); // Replace last comma with closing brace
+        } else {
+            sb.append("}"); // If no elements, just close the brace
+        }
+        return sb.toString();
     }
 }
