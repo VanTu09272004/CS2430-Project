@@ -1,7 +1,7 @@
 # CS2430 – Programming Project 1
 
 ## Team Members
-- Tai – Implementation Lead  
+- Ti – Implementation Lead  
 - Musfer – Communications Lead  
 - Deysi Oliver – Verification Lead  
 
