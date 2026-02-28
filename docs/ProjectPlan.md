@@ -39,8 +39,8 @@
 |------|--------|---------|----------|
 | Design multiset structure | Ti | Done | Commit dbecb73 |
 | Implement multiset operations | Ti | Done | Commit dbecb73 |
-| Create multiset test cases | Deysi | In Progress | TestMain.java |
-| Update README and report | Musfer | In Progress | README.md |
+| Create multiset test cases | Deysi | Done | TestMain.java |
+| Update README | Musfer | Done | README.md |
 
 ---
 
