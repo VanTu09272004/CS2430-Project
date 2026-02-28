@@ -1,5 +1,9 @@
 public class Ordinary {
     /*
+     * Team members (Ti Nguyen, Musfer Almansoori, and Deysi Oliver)
+     * Course and section (CS 2430, section 1)
+     * Project name (Programming Project 1 – Spring 2026)
+     * 
      * This class implements ordinary set operations on boolean arrays.
      * Each index in the array represents an element in the universal set,
      * and the value at that index (true/false) indicates whether that element is in

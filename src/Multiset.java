@@ -1,5 +1,9 @@
 public class Multiset {
     /*
+     * Team members (Ti Nguyen, Musfer Almansoori, and Deysi Oliver)
+     * Course and section (CS 2430, section 1)
+     * Project name (Programming Project 1 – Spring 2026)
+     * 
      * Multiset operations can be implemented similarly to set operations,
      * but we need to account for the multiplicity of elements.
      * For simplicity, we can represent a multiset as an array of integers

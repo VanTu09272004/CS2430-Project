@@ -3,7 +3,7 @@
 ## Description
 In this project, we will build two data structures:
 1. Ordinary sets using Boolean arrays.
-2. Multisets using a HashMap to count elements.
+2. Multisets use an integer array (int[]) where each index represents the count of the corresponding element in the universal set.
 
 ## Required Features
 - Union operation
