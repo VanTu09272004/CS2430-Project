@@ -1,5 +1,6 @@
 public class TestMultiset {
     /*
+     * Team name: DTM
      * Team members (Ti Nguyen, Musfer Almansoori, and Deysi Oliver)
      * Course and section (CS 2430, section 1)
      * Project name (Programming Project 1 – Spring 2026)
@@ -12,25 +13,24 @@ public class TestMultiset {
         Multiset multiset = new Multiset();
 
         String[] U = {
-            "Computer Science","Mathematics","Biology","Physics",
-            "Chemistry","English","History","Economics","Psychology","Art"
+                "Computer Science", "Mathematics", "Biology", "Physics",
+                "Chemistry", "English", "History", "Economics", "Psychology", "Art"
         };
 
         // Test Case 1: Partial Overlap
         int[] A1 = new int[n];
         int[] B1 = new int[n];
 
-        A1[2] = 2;  // Biology x2
-        A1[5] = 1;  // English x1
-        A1[9] = 3;  // Art x3
+        A1[2] = 2; // Biology x2
+        A1[5] = 1; // English x1
+        A1[9] = 3; // Art x3
 
-        B1[2] = 1;  // Biology x1
-        B1[3] = 4;  // Physics x4
-        B1[9] = 2;  // Art x2
+        B1[2] = 1; // Biology x1
+        B1[3] = 4; // Physics x4
+        B1[9] = 2; // Art x2
 
         System.out.println("=== Test Case 1: Partial Overlap ===");
         multiset.runAllOperations(A1, B1, U);
-
 
         // Test Case 2: Disjoint
         int[] A2 = new int[n];
@@ -45,7 +45,6 @@ public class TestMultiset {
         System.out.println("\n=== Test Case 2: Disjoint ===");
         multiset.runAllOperations(A2, B2, U);
 
-
         // Test Case 3: One Empty
         int[] A3 = new int[n];
         int[] B3 = new int[n];
@@ -55,7 +54,6 @@ public class TestMultiset {
 
         System.out.println("\n=== Test Case 3: One Empty ===");
         multiset.runAllOperations(A3, B3, U);
-
 
         // Test Case 4: Both Full
         int[] A4 = new int[n];
@@ -68,7 +66,6 @@ public class TestMultiset {
 
         System.out.println("\n=== Test Case 4: Both Full ===");
         multiset.runAllOperations(A4, B4, U);
-
 
         // Test Case 5: Invalid Input
         System.out.println("\n=== Test Case 5: Invalid Input (Should Throw Exception) ===");

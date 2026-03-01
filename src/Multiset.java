@@ -1,5 +1,6 @@
 public class Multiset {
     /*
+     * Team name: DTM
      * Team members (Ti Nguyen, Musfer Almansoori, and Deysi Oliver)
      * Course and section (CS 2430, section 1)
      * Project name (Programming Project 1 – Spring 2026)
