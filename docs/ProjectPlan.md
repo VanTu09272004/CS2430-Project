@@ -49,4 +49,4 @@
 - Multiset implementation is complete and producing labeled output.
 - Representative and edge test cases are implemented in TestMain.java.
 - Documentation and README are updated.
-- Final step: Complete multiset test verification and finalize report.
+- Final step: Complete multiset test verification and finalize report. 
