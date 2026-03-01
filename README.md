@@ -11,7 +11,7 @@
 This project implements two data structures:
 
 1. Ordinary sets using Boolean arrays.
-2. Multisets using a HashMap to store element counts.
+2. Multisets using a int[] to store element counts.
 
 ---
 
@@ -39,5 +39,5 @@ Outputs are clearly labeled in the console.
 
 ## How to Run
 1. Compile all Java files inside the `src` folder.
-2. Run `TestMain.java`.
+2. Run `TestMain.java` and `TestMultiset.java`.
 3. Review the printed output in the console.
