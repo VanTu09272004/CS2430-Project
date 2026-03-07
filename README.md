@@ -3,9 +3,9 @@
 This repository contains our team submissions for CS2430.
 
 ## Team Members
-- Ti – Implementation Lead  
-- Musfer – Communications Lead  
-- Deysi Oliver – Verification Lead  
+- Ti Nguyen
+- Musfer Almansoori
+- Deysi Oliver 
 
 ## Project Structure
 
