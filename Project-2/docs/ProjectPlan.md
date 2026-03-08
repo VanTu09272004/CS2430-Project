@@ -1,9 +1,9 @@
-# CS2430 – Programming Project 1
+# CS2430 – Programming Project 2
 
 ## Team Members
 - Ti Nguyen – Communications Lead  
 - Musfer Almansoori – Verification Lead  
-- Deysi Oliver - Implementation Lead 
+- Deysi Oliver – Implementation Lead 
 
 ---
 
@@ -15,7 +15,7 @@
 | Rotate and confirm roles | Team | Done | Team discussion |
 | Create project plan file | Ti | Done | Commit adding ProjectPlan.md |
 | Create project2 folder structure | Ti | Working | GitHub Commit |
-| Create README skeleton | Ti | Working | https://github.com/VanTu09272004/CS2430-Project/Project-2/README.md |
+| Create README skeleton | Ti | Working | https://github.com/VanTu09272004/CS2430-Project/tree/main/Project-2 |
 | Identify sorting algorithms to implement | Team | Done | Assignment requirements |
 | Outline program architecture | Musfer | Working |  |
 
@@ -25,10 +25,23 @@
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
-| Design permutation generator approach | Musfer | Working |  |
-| Implement permutation generator | Musfer | Pending |  |
-| Verify generator produces all permutations | Deysi | Pending |  |
+| Design permutation generator approach | Deysi | Working |  |
+| Implement permutation generator | Deysi | Pending |  |
+| Verify generator produces all permutations | Musfer | Pending |  |
 | Document generator logic | Ti | Pending |  |
+
+---
+
+## Milestone 3 – Part 2 (Sorting Algorithms)
+
+| Task | Owner | Status | Evidence |
+|------|--------|---------|----------|
+| Implement mergesort | Deysi | Working |  |
+| Implement quicksort | Deysi | Pending |  |
+| Implement shaker sort | Deysi | Pending |  |
+| Implement heapsort | Deysi | Pending |  |
+| Add comparison counter to algorithms | Musfer | Pending |  |
+| Verify correctness of sorting algorithms | Musfer | Pending |  |
 
 ---
 
@@ -36,12 +49,12 @@
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
-| Design experiment driver | Musfer | Pending |  |
-| Implement driver program | Musfer | Pending |  |
-| Run experiments for n = 4 | Deysi | Pending |  |
-| Run experiments for n = 6 | Deysi | Pending |  |
-| Run experiments for n = 8 | Deysi | Pending |  |
-| Collect comparison statistics | Deysi | Pending |  |
+| Design experiment driver | Deysi | Pending |  |
+| Implement driver program | Deysi | Pending |  |
+| Run experiments for n = 4 | Musfer | Pending |  |
+| Run experiments for n = 6 | Musfer | Pending |  |
+| Run experiments for n = 8 | Musfer | Pending |  |
+| Collect comparison statistics | Musfer | Pending |  |
 
 ---
 
@@ -51,7 +64,7 @@
 |------|--------|---------|----------|
 | Create report outline | Ti | Pending |  |
 | Write introduction and algorithm summaries | Ti | Pending |  |
-| Generate results tables | Deysi | Pending |  |
+| Generate results tables | Musfer | Pending |  |
 | Write analysis section | Team | Pending |  |
 | Write conclusion | Team | Pending |  |
 | Create screencast video | Team | Pending |  |
@@ -63,6 +76,7 @@
 ## Current Status
 - Roles have been rotated according to project requirements.
 - Repository structure for Project 2 is being prepared.
-- Representative and edge test cases are implemented in TestMain.java.
+- Initial documentation and project structure for Project 2 have been created.
+- The team is preparing to begin implementation of the permutation generator and sorting algorithms.
 - Project plan and documentation skeletons are being created.
 - Implementation of permutation generator and sorting algorithms will begin next.
