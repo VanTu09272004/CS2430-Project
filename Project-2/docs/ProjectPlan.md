@@ -28,7 +28,7 @@
 | Design permutation generator approach | Deysi | Done | Commit 6cb5074 |
 | Implement permutation generator | Deysi | Done | Commit 6cb5074 |
 | Verify generator produces all permutations | Musfer | Pending |  |
-| Document generator logic | Ti | Pending |  |
+| Document generator logic | Ti | Done | Commit d8ded53 |
 
 ---
 
