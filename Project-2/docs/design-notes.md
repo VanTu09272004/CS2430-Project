@@ -6,8 +6,13 @@ The project will be organized into several main components.
 
 1. **Permutation Generator**
 
-Responsible for generating all permutations of the array {0, 1, ..., n-1}.
-Output will be passed to the sorting algorithms for testing.
+Responsible for generating all permutations of the array `{0, 1, ..., n-1}`.
+These permutations are used as the input data for each sorting algorithm so that all algorithms are tested on the same complete set of arrays.
+
+The generator begins with the sorted array and produces each new permutation until all possible orderings have been generated. This ensures that:
+- every possible input arrangement is tested,
+- no duplicate permutations are produced,
+- the experiment is fair across all sorting algorithms.
 
 ---
 
@@ -51,8 +56,7 @@ After all permutations are tested, summary statistics will be calculated.
 
 Only comparisons between elements that determine ordering will be counted.
 Examples:
-Valid comparisons: a[i] < a[j]
-Not counted:
+**Valid comparison example:** `a[i] < a[j]`Not counted:
 - loop index comparisons
 - bounds checking
 - control logic comparisons
