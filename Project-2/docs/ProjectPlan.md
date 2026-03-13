@@ -75,8 +75,9 @@
 
 ## Current Status
 - Roles have been rotated according to project requirements.
-- Repository structure for Project 2 is being prepared.
-- Initial documentation and project structure for Project 2 have been created.
-- The team is preparing to begin implementation of the permutation generator and sorting algorithms.
-- Project plan and documentation skeletons are being created.
-- Implementation of permutation generator and sorting algorithms will begin next.
+- Repository structure and documentation for Project 2 have been created.
+- The permutation generator has been implemented.
+- Mergesort and Quicksort implementations have been completed.
+- Remaining sorting algorithms (Shaker Sort and Heapsort) are still in progress.
+- Verification of the permutation generator and sorting algorithms is pending.
+- Documentation and report preparation are ongoing.
