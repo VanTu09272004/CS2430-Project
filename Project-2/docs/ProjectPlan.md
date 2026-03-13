@@ -25,8 +25,8 @@
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
-| Design permutation generator approach | Deysi | Working |  |
-| Implement permutation generator | Deysi | Pending |  |
+| Design permutation generator approach | Deysi | Done | Commit 6cb5074 |
+| Implement permutation generator | Deysi | Done | Commit 6cb5074 |
 | Verify generator produces all permutations | Musfer | Pending |  |
 | Document generator logic | Ti | Pending |  |
 
@@ -36,8 +36,8 @@
 
 | Task | Owner | Status | Evidence |
 |------|--------|---------|----------|
-| Implement mergesort | Deysi | Working |  |
-| Implement quicksort | Deysi | Pending |  |
+| Implement mergesort | Deysi | Done | Commit 1a4d031 |
+| Implement quicksort | Deysi | Done | Commit 6a71508|
 | Implement shaker sort | Deysi | Pending |  |
 | Implement heapsort | Deysi | Pending |  |
 | Add comparison counter to algorithms | Musfer | Pending |  |
