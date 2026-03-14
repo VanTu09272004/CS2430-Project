@@ -6,13 +6,24 @@ The project will be organized into several main components.
 
 1. **Permutation Generator**
 
-Responsible for generating all permutations of the array `{0, 1, ..., n-1}`.
-These permutations are used as the input data for each sorting algorithm so that all algorithms are tested on the same complete set of arrays.
+The permutation generator creates every possible ordering of the integers `{0, 1, ..., n-1}`.  
+These permutations are used as input arrays for the sorting algorithms so that all algorithms are tested on the same complete set of inputs.
 
-The generator begins with the sorted array and produces each new permutation until all possible orderings have been generated. This ensures that:
-- every possible input arrangement is tested,
-- no duplicate permutations are produced,
-- the experiment is fair across all sorting algorithms.
+The generator uses a **recursive backtracking approach with element swapping**.
+
+Process:
+
+1. Start with an array `[0, 1, 2, ..., n-1]`.
+2. At each recursion level, select one position in the array.
+3. Swap the current element with each element that follows it.
+4. Recursively generate permutations for the remaining positions.
+5. When the recursion reaches the end of the array, the current arrangement is stored as a valid permutation.
+6. After each recursive call, the elements are swapped back to restore the original order (backtracking).
+
+This approach ensures that:
+- all possible permutations are generated,
+- no duplicates are produced,
+- each permutation is stored and used for testing the sorting algorithms.
 
 ---
 
